@@ -1,0 +1,1134 @@
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 10 -c 10 http://172.16.16.101:8889/
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient).....done
+
+
+Server Software:        myserver/1.0
+Server Hostname:        172.16.16.101
+Server Port:            8889
+
+Document Path:          /
+Document Length:        35 bytes
+
+Concurrency Level:      10
+Time taken for tests:   0.110 seconds
+Complete requests:      10
+Failed requests:        0
+Total transferred:      1470 bytes
+HTML transferred:       350 bytes
+Requests per second:    91.03 [#/sec] (mean)
+Time per request:       109.848 [ms] (mean)
+Time per request:       10.985 [ms] (mean, across all concurrent requests)
+Transfer rate:          13.07 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.8      1       2
+Processing:     9   31  15.9     34      56
+Waiting:        8   29  15.4     32      51
+Total:         10   32  15.4     34      56
+
+Percentage of the requests served within a certain time (ms)
+  50%     34
+  66%     38
+  75%     43
+  80%     52
+  90%     56
+  95%     56
+  98%     56
+  99%     56
+ 100%     56 (longest request)
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 10 -c 10 http://172.16.16.101:8889/rfc2616.pdf
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient).....done
+
+
+Server Software:        myserver/1.0
+Server Hostname:        172.16.16.101
+Server Port:            8889
+
+Document Path:          /rfc2616.pdf
+Document Length:        550562 bytes
+
+Concurrency Level:      10
+Time taken for tests:   1.943 seconds
+Complete requests:      10
+Failed requests:        0
+Total transferred:      5507080 bytes
+HTML transferred:       5505620 bytes
+Requests per second:    5.15 [#/sec] (mean)
+Time per request:       1942.916 [ms] (mean)
+Time per request:       194.292 [ms] (mean, across all concurrent requests)
+Transfer rate:          2768.01 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.8      0       2
+Processing:   226  580 217.6    682     894
+Waiting:      220  578 218.9    681     893
+Total:        228  581 217.2    682     895
+WARNING: The median and mean for the initial connection time are not within a normal deviation
+        These results are probably not that reliable.
+
+Percentage of the requests served within a certain time (ms)
+  50%    682
+  66%    696
+  75%    737
+  80%    758
+  90%    895
+  95%    895
+  98%    895
+  99%    895
+ 100%    895 (longest request)
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 10 -c 10 http://172.16.16.101:8889/testing.txt
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient).....done
+
+
+Server Software:        myserver/1.0
+Server Hostname:        172.16.16.101
+Server Port:            8889
+
+Document Path:          /testing.txt
+Document Length:        22 bytes
+
+Concurrency Level:      10
+Time taken for tests:   0.298 seconds
+Complete requests:      10
+Failed requests:        0
+Total transferred:      1590 bytes
+HTML transferred:       220 bytes
+Requests per second:    33.59 [#/sec] (mean)
+Time per request:       297.727 [ms] (mean)
+Time per request:       29.773 [ms] (mean, across all concurrent requests)
+Transfer rate:          5.22 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.2      0       1
+Processing:    62   75   8.9     74      90
+Waiting:       60   74   8.0     73      83
+Total:         62   75   8.9     74      90
+
+Percentage of the requests served within a certain time (ms)
+  50%     74
+  66%     78
+  75%     84
+  80%     85
+  90%     90
+  95%     90
+  98%     90
+  99%     90
+ 100%     90 (longest request)
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 10 -c 10 http://172.16.16.101:8889/pokijan.jpg
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient).....done
+
+
+Server Software:        myserver/1.0
+Server Hostname:        172.16.16.101
+Server Port:            8889
+
+Document Path:          /pokijan.jpg
+Document Length:        15706 bytes
+
+Concurrency Level:      10
+Time taken for tests:   0.471 seconds
+Complete requests:      10
+Failed requests:        0
+Total transferred:      158460 bytes
+HTML transferred:       157060 bytes
+Requests per second:    21.23 [#/sec] (mean)
+Time per request:       471.122 [ms] (mean)
+Time per request:       47.112 [ms] (mean, across all concurrent requests)
+Transfer rate:          328.46 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:    86  111  21.9    110     152
+Waiting:       82  107  20.8    110     147
+Total:         86  111  21.9    110     153
+
+Percentage of the requests served within a certain time (ms)
+  50%    110
+  66%    113
+  75%    128
+  80%    136
+  90%    153
+  95%    153
+  98%    153
+  99%    153
+ 100%    153 (longest request)
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 50 -c 50 http://172.16.16.101:8889/
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient).....done
+
+
+Server Software:        myserver/1.0
+Server Hostname:        172.16.16.101
+Server Port:            8889
+
+Document Path:          /
+Document Length:        35 bytes
+
+Concurrency Level:      50
+Time taken for tests:   15.221 seconds
+Complete requests:      50
+Failed requests:        0
+Total transferred:      7350 bytes
+HTML transferred:       1750 bytes
+Requests per second:    3.28 [#/sec] (mean)
+Time per request:       15221.279 [ms] (mean)
+Time per request:       304.426 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.47 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  444 527.1      0    1059
+Processing:    57 1375 3075.6    138   14113
+Waiting:       48 1370 3073.6    138   14094
+Total:         57 1820 3363.7    144   15171
+
+Percentage of the requests served within a certain time (ms)
+  50%    144
+  66%   1433
+  75%   2058
+  80%   3006
+  90%   4769
+  95%   8268
+  98%  15171
+  99%  15171
+ 100%  15171 (longest request)
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 50 -c 50 http://172.16.16.101:8889/rfc2616.pdf
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)...apr_pollset_poll: The timeout specified has expired (70007)
+Total of 38 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 50 -c 25 http://172.16.16.101:8889/rfc2616.pdf
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)...apr_pollset_poll: The timeout specified has expired (70007)
+Total of 43 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 50 -c 20 http://172.16.16.101:8889/rfc2616.pdf
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)...apr_pollset_poll: The timeout specified has expired (70007)
+Total of 47 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 50 -c 18 http://172.16.16.101:8889/rfc2616.pdf
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)...apr_pollset_poll: The timeout specified has expired (70007)
+Total of 49 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 50 -c 15 http://172.16.16.101:8889/rfc2616.pdf
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient).....done
+
+
+Server Software:        myserver/1.0
+Server Hostname:        172.16.16.101
+Server Port:            8889
+
+Document Path:          /rfc2616.pdf
+Document Length:        550562 bytes
+
+Concurrency Level:      15
+Time taken for tests:   57.069 seconds
+Complete requests:      50
+Failed requests:        0
+Total transferred:      27535400 bytes
+HTML transferred:       27528100 bytes
+Requests per second:    0.88 [#/sec] (mean)
+Time per request:       17120.742 [ms] (mean)
+Time per request:       1141.383 [ms] (mean, across all concurrent requests)
+Transfer rate:          471.18 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  776 1179.2   1016    7225
+Processing:   831 6859 13243.6   2584   54725
+Waiting:      809 6837 13238.2   2578   54622
+Total:        832 7635 13407.2   3203   55805
+
+Percentage of the requests served within a certain time (ms)
+  50%   3203
+  66%   3723
+  75%   4056
+  80%   5799
+  90%  28708
+  95%  55145
+  98%  55805
+  99%  55805
+ 100%  55805 (longest request)
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 50 -c 50 http://172.16.16.101:8889/testing.txt
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)...apr_pollset_poll: The timeout specified has expired (70007)
+Total of 36 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 50 -c 30 http://172.16.16.101:8889/testing.txt
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)...apr_pollset_poll: The timeout specified has expired (70007)
+Total of 43 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 50 -c 20 http://172.16.16.101:8889/testing.txt
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient).....done
+
+
+Server Software:        myserver/1.0
+Server Hostname:        172.16.16.101
+Server Port:            8889
+
+Document Path:          /testing.txt
+Document Length:        22 bytes
+
+Concurrency Level:      20
+Time taken for tests:   0.826 seconds
+Complete requests:      50
+Failed requests:        0
+Total transferred:      7950 bytes
+HTML transferred:       1100 bytes
+Requests per second:    60.53 [#/sec] (mean)
+Time per request:       330.441 [ms] (mean)
+Time per request:       16.522 [ms] (mean, across all concurrent requests)
+Transfer rate:          9.40 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.5      0       3
+Processing:    14   77  27.4     80     148
+Waiting:       12   76  27.3     78     145
+Total:         15   77  27.2     80     148
+
+Percentage of the requests served within a certain time (ms)
+  50%     80
+  66%     92
+  75%     98
+  80%    102
+  90%    107
+  95%    115
+  98%    148
+  99%    148
+ 100%    148 (longest request)
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 50 -c 25 http://172.16.16.101:8889/testing.txt
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient).....done
+
+
+Server Software:        myserver/1.0
+Server Hostname:        172.16.16.101
+Server Port:            8889
+
+Document Path:          /testing.txt
+Document Length:        22 bytes
+
+Concurrency Level:      25
+Time taken for tests:   29.418 seconds
+Complete requests:      50
+Failed requests:        0
+Total transferred:      7950 bytes
+HTML transferred:       1100 bytes
+Requests per second:    1.70 [#/sec] (mean)
+Time per request:       14708.988 [ms] (mean)
+Time per request:       588.360 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.26 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  460 524.3      1    1046
+Processing:   108 2726 6128.3    305   28241
+Waiting:      108 2722 6128.1    300   28235
+Total:        109 3186 6390.4    364   29287
+
+Percentage of the requests served within a certain time (ms)
+  50%    364
+  66%   1879
+  75%   2991
+  80%   4786
+  90%   8279
+  95%  15229
+  98%  29287
+  99%  29287
+ 100%  29287 (longest request)
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 50 -c 50 http://172.16.16.101:8889/pokijan.jpg
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient).....done
+
+
+Server Software:        myserver/1.0
+Server Hostname:        172.16.16.101
+Server Port:            8889
+
+Document Path:          /pokijan.jpg
+Document Length:        15706 bytes
+
+Concurrency Level:      50
+Time taken for tests:   1.615 seconds
+Complete requests:      50
+Failed requests:        0
+Total transferred:      792300 bytes
+HTML transferred:       785300 bytes
+Requests per second:    30.95 [#/sec] (mean)
+Time per request:       1615.476 [ms] (mean)
+Time per request:       32.310 [ms] (mean, across all concurrent requests)
+Transfer rate:          478.95 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  166 383.5      0    1037
+Processing:    23  117 113.7     84     557
+Waiting:       18  115 113.1     81     554
+Total:         23  283 479.9     84    1593
+
+Percentage of the requests served within a certain time (ms)
+  50%     84
+  66%    105
+  75%    118
+  80%    136
+  90%   1373
+  95%   1405
+  98%   1593
+  99%   1593
+ 100%   1593 (longest request)
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 100 -c 100 http://172.16.16.101:8889/
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)...apr_pollset_poll: The timeout specified has expired (70007)
+Total of 91 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 100 -c 50 http://172.16.16.101:8889/
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)...apr_pollset_poll: The timeout specified has expired (70007)
+Total of 98 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 100 -c 30 http://172.16.16.101:8889/
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)...apr_pollset_poll: The timeout specified has expired (70007)
+Total of 95 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 100 -c 25 http://172.16.16.101:8889/
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient).....done
+
+
+Server Software:        myserver/1.0
+Server Hostname:        172.16.16.101
+Server Port:            8889
+
+Document Path:          /
+Document Length:        35 bytes
+
+Concurrency Level:      25
+Time taken for tests:   15.054 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      14700 bytes
+HTML transferred:       3500 bytes
+Requests per second:    6.64 [#/sec] (mean)
+Time per request:       3763.519 [ms] (mean)
+Time per request:       150.541 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.95 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  219 425.8      0    1041
+Processing:     6  711 2243.1     93   14008
+Waiting:        5  709 2242.1     91   13993
+Total:          6  929 2502.4     93   15048
+
+Percentage of the requests served within a certain time (ms)
+  50%     93
+  66%    124
+  75%    189
+  80%   1173
+  90%   2909
+  95%   4727
+  98%  15005
+  99%  15048
+ 100%  15048 (longest request)
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 100 -c 100 http://172.16.16.101:8889/rfc2616.pdf
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)...apr_pollset_poll: The timeout specified has expired (70007)
+Total of 46 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 100 -c 50 http://172.16.16.101:8889/rfc2616.pdf
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)...apr_pollset_poll: The timeout specified has expired (70007)
+Total of 12 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 100 -c 25 http://172.16.16.101:8889/rfc2616.pdf
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)...apr_pollset_poll: The timeout specified has expired (70007)
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 100 -c 20 http://172.16.16.101:8889/rfc2616.pdf
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)...apr_pollset_poll: The timeout specified has expired (70007)
+Total of 99 requests completed
+(base) jovyan@4ccc79afb585:~/work/progja(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 100 -c 15 http://172.16.16.101:8889/rfc2616.pdf
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient).....done
+
+
+Server Software:        myserver/1.0
+Server Hostname:        172.16.16.101
+Server Port:            8889
+
+Document Path:          /rfc2616.pdf
+Document Length:        550562 bytes
+
+Concurrency Level:      15
+Time taken for tests:   31.927 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      55070800 bytes
+HTML transferred:       55056200 bytes
+Requests per second:    3.13 [#/sec] (mean)
+Time per request:       4788.992 [ms] (mean)
+Time per request:       319.266 [ms] (mean, across all concurrent requests)
+Transfer rate:          1684.49 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0 1027 2764.8      0   15719
+Processing:   195 2210 2915.5   1034   14778
+Waiting:      192 2202 2914.4   1030   14772
+Total:        196 3236 4734.8   1257   23657
+
+Percentage of the requests served within a certain time (ms)
+  50%   1257
+  66%   2106
+  75%   2425
+  80%   4031
+  90%   8569
+  95%  12057
+  98%  23598
+  99%  23657
+ 100%  23657 (longest request)
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 100 -c 100 http://172.16.16.101:8889/testing.txt
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)...apr_pollset_poll: The timeout specified has expired (70007)
+Total of 41 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 100 -c 25 http://172.16.16.101:8889/testing.txt
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient).....done
+
+
+Server Software:        myserver/1.0
+Server Hostname:        172.16.16.101
+Server Port:            8889
+
+Document Path:          /testing.txt
+Document Length:        22 bytes
+
+Concurrency Level:      25
+Time taken for tests:   29.622 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      15900 bytes
+HTML transferred:       2200 bytes
+Requests per second:    3.38 [#/sec] (mean)
+Time per request:       7405.574 [ms] (mean)
+Time per request:       296.223 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.52 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  212 411.8      0    1043
+Processing:    28 1516 4753.1    161   28586
+Waiting:       26 1513 4752.5    154   28576
+Total:         31 1728 4999.0    163   29591
+
+Percentage of the requests served within a certain time (ms)
+  50%    163
+  66%    205
+  75%    243
+  80%   1174
+  90%   4732
+  95%  15442
+  98%  29455
+  99%  29591
+ 100%  29591 (longest request)
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 100 -c 50 http://172.16.16.101:8889/testing.txt
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)...apr_pollset_poll: The timeout specified has expired (70007)
+Total of 76 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 100 -c 30 http://172.16.16.101:8889/testing.txt
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)...apr_pollset_poll: The timeout specified has expired (70007)
+Total of 95 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 100 -c 50 http://172.16.16.101:8889/pokijan.jpg
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)...apr_pollset_poll: The timeout specified has expired (70007)
+Total of 72 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 100 -c 30 http://172.16.16.101:8889/pokijan.jpg
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient).....done
+
+
+Server Software:        myserver/1.0
+Server Hostname:        172.16.16.101
+Server Port:            8889
+
+Document Path:          /pokijan.jpg
+Document Length:        15706 bytes
+
+Concurrency Level:      30
+Time taken for tests:   56.729 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      1584600 bytes
+HTML transferred:       1570600 bytes
+Requests per second:    1.76 [#/sec] (mean)
+Time per request:       17018.791 [ms] (mean)
+Time per request:       567.293 [ms] (mean, across all concurrent requests)
+Transfer rate:          27.28 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  273 450.4      0    1019
+Processing:    15 2921 9289.0    156   55705
+Waiting:       12 2917 9288.1    153   55700
+Total:         15 3194 9519.7    158   56715
+
+Percentage of the requests served within a certain time (ms)
+  50%    158
+  66%    286
+  75%   1192
+  80%   1685
+  90%   8203
+  95%  29170
+  98%  56653
+  99%  56715
+ 100%  56715 (longest request)
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 500 -c 500 http://172.16.16.101:8889/
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+^[[Capr_pollset_poll: The timeout specified has expired (70007)
+Total of 102 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 500 -c 300 http://172.16.16.101:8889/
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+Completed 200 requests
+apr_pollset_poll: The timeout specified has expired (70007)
+Total of 218 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 500 -c 100 http://172.16.16.101:8889/
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+apr_socket_recv: Connection reset by peer (104)
+Total of 412 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 500 -c 90 http://172.16.16.101:8889/
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+apr_pollset_poll: The timeout specified has expired (70007)
+Total of 431 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 500 -c 80 http://172.16.16.101:8889/
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+apr_socket_recv: Connection reset by peer (104)
+Total of 433 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 500 -c 70 http://172.16.16.101:8889/
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+apr_pollset_poll: The timeout specified has expired (70007)
+Total of 451 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 500 -c 50 http://172.16.16.101:8889/
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+apr_socket_recv: Connection reset by peer (104)
+Total of 463 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 500 -c 30 http://172.16.16.101:8889/
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+apr_pollset_poll: The timeout specified has expired (70007)
+Total of 488 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 500 -c 20 http://172.16.16.101:8889/
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+apr_pollset_poll: The timeout specified has expired (70007)
+Total of 497 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 500 -c 17 http://172.16.16.101:8889/
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+apr_socket_recv: Connection reset by peer (104)
+Total of 381 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 500 -c 17 http://172.16.16.101:8889/
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Finished 500 requests
+
+
+Server Software:        myserver/1.0
+Server Hostname:        172.16.16.101
+Server Port:            8889
+
+Document Path:          /
+Document Length:        35 bytes
+
+Concurrency Level:      17
+Time taken for tests:   52.006 seconds
+Complete requests:      500
+Failed requests:        0
+Total transferred:      73500 bytes
+HTML transferred:       17500 bytes
+Requests per second:    9.61 [#/sec] (mean)
+Time per request:       1768.219 [ms] (mean)
+Time per request:       104.013 [ms] (mean, across all concurrent requests)
+Transfer rate:          1.38 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  856 2388.3      0   32141
+Processing:     7  692 612.9    627    7682
+Waiting:        6  680 608.7    611    7676
+Total:          7 1548 2611.0    795   33860
+
+Percentage of the requests served within a certain time (ms)
+  50%    795
+  66%   1301
+  75%   1693
+  80%   1936
+  90%   3906
+  95%   7843
+  98%   8711
+  99%   9829
+ 100%  33860 (longest request)
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 500 -c 20 http://172.16.16.101:8889/
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+apr_socket_recv: Connection reset by peer (104)
+Total of 477 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 500 -c 500 http://172.16.16.101:8889/rfc2616.pdf
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+apr_pollset_poll: The timeout specified has expired (70007)
+Total of 105 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 500 -c 30 http://172.16.16.101:8889/rfc2616.pdf
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+apr_socket_recv: Connection reset by peer (104)
+Total of 302 requests completed
+
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 500 -c 10 http://172.16.16.101:8889/rfc2616.pdf
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+apr_socket_recv: Connection timed out (110)
+Total of 331 requests completed
+
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 500 -c 5 http://172.16.16.101:8889/rfc2616.pdf
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Finished 500 requests
+
+
+Server Software:        myserver/1.0
+Server Hostname:        172.16.16.101
+Server Port:            8889
+
+Document Path:          /rfc2616.pdf
+Document Length:        550562 bytes
+
+Concurrency Level:      5
+Time taken for tests:   181.318 seconds
+Complete requests:      500
+Failed requests:        0
+Total transferred:      275354000 bytes
+HTML transferred:       275281000 bytes
+Requests per second:    2.76 [#/sec] (mean)
+Time per request:       1813.178 [ms] (mean)
+Time per request:       362.636 [ms] (mean, across all concurrent requests)
+Transfer rate:          1483.03 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0   91 295.1      0    1082
+Processing:   161 1711 634.7   1703    3845
+Waiting:      160 1693 627.9   1682    3833
+Total:        161 1801 672.8   1778    3938
+
+Percentage of the requests served within a certain time (ms)
+  50%   1778
+  66%   2090
+  75%   2237
+  80%   2342
+  90%   2694
+  95%   2933
+  98%   3245
+  99%   3622
+ 100%   3938 (longest request)
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 500 -c 500 http://172.16.16.101:8889/testing.txt
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+apr_pollset_poll: The timeout specified has expired (70007)
+Total of 55 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 500 -c 10 http://172.16.16.101:8889/testing.txt
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Finished 500 requests
+
+
+Server Software:        myserver/1.0
+Server Hostname:        172.16.16.101
+Server Port:            8889
+
+Document Path:          /testing.txt
+Document Length:        22 bytes
+
+Concurrency Level:      10
+Time taken for tests:   57.782 seconds
+Complete requests:      500
+Failed requests:        0
+Total transferred:      79500 bytes
+HTML transferred:       11000 bytes
+Requests per second:    8.65 [#/sec] (mean)
+Time per request:       1155.638 [ms] (mean)
+Time per request:       115.564 [ms] (mean, across all concurrent requests)
+Transfer rate:          1.34 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  348 1266.5      0   15809
+Processing:     9  763 495.7    785    2843
+Waiting:        9  747 487.5    762    2837
+Total:          9 1111 1411.3    836   16976
+
+Percentage of the requests served within a certain time (ms)
+  50%    836
+  66%   1159
+  75%   1395
+  80%   1579
+  90%   2197
+  95%   2682
+  98%   4485
+  99%   7835
+ 100%  16976 (longest request)
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 500 -c 50 http://172.16.16.101:8889/testing.txt
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+apr_socket_recv: Connection reset by peer (104)
+Total of 462 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 500 -c 25 http://172.16.16.101:8889/testing.txt
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+apr_socket_recv: Connection reset by peer (104)
+Total of 363 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 500 -c 500 http://172.16.16.101:8889/pokijan.jpg
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+apr_pollset_poll: The timeout specified has expired (70007)
+Total of 119 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 500 -c 30 http://172.16.16.101:8889/pokijan.jpg
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+apr_pollset_poll: The timeout specified has expired (70007)
+Total of 491 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 500 -c 25 http://172.16.16.101:8889/pokijan.jpg
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+apr_socket_recv: Connection reset by peer (104)
+Total of 439 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 500 -c 20 http://172.16.16.101:8889/pokijan.jpg
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+apr_pollset_poll: The timeout specified has expired (70007)
+Total of 498 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 500 -c 18 http://172.16.16.101:8889/pokijan.jpg
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+apr_pollset_poll: The timeout specified has expired (70007)
+Total of 498 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 500 -c 15 http://172.16.16.101:8889/pokijan.jpg
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+apr_socket_recv: Connection timed out (110)
+Total of 482 requests completed
+(base) jovyan@4ccc79afb585:~/work/progjar/progjar5$ ab -n 500 -c 10 http://172.16.16.101:8889/pokijan.jpg
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.16.101 (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Finished 500 requests
+
+
+Server Software:        myserver/1.0
+Server Hostname:        172.16.16.101
+Server Port:            8889
+
+Document Path:          /pokijan.jpg
+Document Length:        15706 bytes
+
+Concurrency Level:      10
+Time taken for tests:   63.323 seconds
+Complete requests:      500
+Failed requests:        0
+Total transferred:      7923000 bytes
+HTML transferred:       7853000 bytes
+Requests per second:    7.90 [#/sec] (mean)
+Time per request:       1266.459 [ms] (mean)
+Time per request:       126.646 [ms] (mean, across all concurrent requests)
+Transfer rate:          122.19 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  371 1108.1      0   15769
+Processing:    19  876 546.0    838    2684
+Waiting:       18  855 533.1    815    2679
+Total:         19 1246 1320.6    997   17303
+
+Percentage of the requests served within a certain time (ms)
+  50%    997
+  66%   1379
+  75%   1585
+  80%   1815
+  90%   2330
+  95%   3368
+  98%   4526
+  99%   4875
+ 100%  17303 (longest request)
